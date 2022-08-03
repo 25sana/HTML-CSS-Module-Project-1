@@ -75,4 +75,25 @@ main .content-up p{
     left: 450px;
     
 }
-
+main .content-down h1{
+    top: 30px;
+    color: black;
+    font-weight: lighter;
+    font-size: 250%;
+    left: 300px;
+    position: relative;
+}
+main .content-down .icons{
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main .content-down .icons-subtitles{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    font-weight: 400;
+    font-size: 170%;
+}
