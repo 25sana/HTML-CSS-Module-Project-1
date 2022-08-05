@@ -97,3 +97,24 @@ main .content-down .icons-subtitles{
     font-weight: 400;
     font-size: 170%;
 }
+
+footer .footer-content h4{
+    font-size: large;
+    font-weight: normal;
+    padding-left: 50%;
+}
+footer .footer-content ul li a img { 
+    /*display: inline-block;
+    text-align: center;*/
+    border: 1px solid #D3D3D3;
+    border-radius: 40%;
+    padding: 7px ;
+    
+}
+footer .footer-content ul{
+    padding-left: 45%;
+}
+footer .footer-bottom{
+    color: #92979B;
+    padding-left: 48%;
+}
