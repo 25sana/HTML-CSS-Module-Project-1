@@ -115,6 +115,9 @@ footer .footer-content h4{
 }
 footer{
     bottom: 0;
+    width: 100%;
+    background-color: white;
+
 }
 footer .footer-content ul li a img { 
     display: inline-block;
@@ -131,6 +134,9 @@ footer .footer-content ul{
 footer .footer-bottom{
     color: #92979B;
     padding-left: 48%;
+}
+footer p{
+
 }
 hr{
     margin: 100px;
