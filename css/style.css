@@ -57,7 +57,7 @@ main .content-up img{
 main .content-up h1 {
     position: absolute;
     top: 90px;
-    left: 10px;
+    left: 120px;
     display: flex;
     color:#ffff ;
     padding: 1em;  
@@ -69,7 +69,7 @@ main .content-up h1 {
 main .content-up p{
     position: absolute;
     top: 270px;
-    left:100px;
+    left:200px;
     color:#ffff ;  
     padding: 1em;
     /*padding: 35px;*/
@@ -87,7 +87,7 @@ main .content-up p{
     border-radius: 5px;
     position: relative;
     top: 450px;
-    left: 350px;
+    left: 450px;
 }
 main .content-down h1{
     top: 30px;
@@ -110,7 +110,7 @@ main .content-down .icons-subtitles{
     align-items: center;
     color: black;
     font-weight: 400;
-    font-size: 170%;
+    font-size: 25px;
 }
 footer .footer-content h4{
     font-size: large;
@@ -138,9 +138,6 @@ footer .footer-content ul{
 footer .footer-bottom{
     color: #92979B;
     padding-left: 48%;
-}
-footer p{
-
 }
 hr{
     margin: 100px;
