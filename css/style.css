@@ -4,7 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     margin: auto;
-    width: 100%;
+    overflow-x: hidden; 
 }
 
 /**
@@ -16,11 +16,19 @@ body {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
+
+
+ /** {
+    outline: solid 1px red;
+}*/
+
  header{
     top: 0;
+    left: 0;
     position: fixed;
     height: 80px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -29,11 +37,14 @@ body {
 }
 header .logo{
     display: flex;
+    flex-wrap: wrap;
     margin-left: 180px;
 }
 ul{
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
+    margin-right: 120px;
     
 }
 ul li a{
@@ -50,33 +61,60 @@ ul li a:hover{
 li a:hover::after{
     width: 100%;
 }
+.content-up{
+    position: relative;
+}
 main .content-up img{
-    width: 120%;
-    margin: 25px;
+    width: 100%;
 }
 main .content-up h1 {
-    position: absolute;
-    top: 90px;
-    left: 120px;
-    display: flex;
-    color:#ffff ;
-    padding: 1em;  
-   /* padding: 80px;*/
+     position:absolute; 
+     display: flex; 
+     flex-wrap: wrap; 
+     align-items: center; 
+     justify-content: center; 
+    text-align: center; 
+    /* top:0px; */
+    /* bottom: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    top: 35%;
     font-size: 80px;
     font-weight: lighter;
     letter-spacing: 1px;
+    color:#ffff ; 
+    position:absolute;
+    text-align: center;
+
+    
+    /*
+    color:#ffff ;
+    padding: 1em; 
+    font-size: 80px;
+    font-weight: lighter;
+    letter-spacing: 1px;*/
 }
 main .content-up p{
     position: absolute;
-    top: 270px;
-    left:200px;
-    color:#ffff ;  
-    padding: 1em;
-    /*padding: 35px;*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    top:50%;
+    /* bottom: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* top: 280px;  */
+    /* left:200px; */
+     color:#ffff ; 
+    padding: 1em; 
     font-size: 35px;
     font-weight: lighter;
 }
 .Learn-More-button{
+    position: absolute;
+    top:70%;
+    right:45%;
     padding: 15px 30px;
     background: #cc5500;
     color: #ffff;
@@ -85,32 +123,46 @@ main .content-up p{
     font-weight: 600;
     text-transform: capitalize;
     border-radius: 5px;
-    position: relative;
-    top: 450px;
-    left: 450px;
+    
+   
+}
+main .content-up .inside{
+    position:absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top:0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color:#ffff ; 
+   
 }
 main .content-down h1{
     top: 30px;
     color: black;
     font-weight: lighter;
     font-size: 40px;
-    left: 500px;
+    /*left: 500px;*/
     position: relative;
-    align-items: center;
+    text-align: center;
 }
 main .content-down .icons{
     height: 150px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 0 100px 20px 180px;
     width: 100%;
 }
 main .content-down .icons-subtitles{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 100px 50px 210px ;
     color: black;
     font-weight: 400;
     font-size: 25px;
@@ -145,20 +197,25 @@ footer .footer-bottom{
     padding-left: 48%;
 }
 hr{
-    margin: 100px;
+    margin: 10px 100px 10px 100px;
 }
 .new-section{
     background-color: #FEECE5;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     align-items: center;
-    margin: 0 100px 0 200px;
 }
 .new-section .right-section{
     float: right;
     display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
     align-items: center;
+}
+.new-section img{
+    width: 35%;
 }
 .new-section .right-section p{
     position: absolute;
