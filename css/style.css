@@ -83,7 +83,6 @@ li a:hover::after{
     border-radius: 5px;
 }
 .content-down h1{
-    /* top: 60px; */
     color: black;
     font-weight: lighter;
     font-size: 40px;
@@ -92,7 +91,6 @@ li a:hover::after{
     align-items: center; 
     text-align: center;
     justify-content:center;
-    /* position: relative;  */
 }
 .content-down .row1 {
     color: black;
@@ -113,6 +111,7 @@ li a:hover::after{
     justify-content: center; 
     text-align: center;
 }
+
 footer{
     display: flex; 
     flex-direction: column;
@@ -149,7 +148,7 @@ footer .footer-bottom{
 }
 .new-section-img{
      width: 35%; 
-     float: left;
+
     
 }
 .new-section .new-right{
