@@ -66,23 +66,27 @@
                                 <input type="text" placeholder="" required>
                             </div>
                         </div>
-                        <div class="input-box">
                             <label class="details">Select Color</label>
-                            <ul class="karma-color">
-                                <li>
-                                    <input type="radio" value="Karma-orange">
-                                    <label class="mini-details">Karma Orange</label>
-                                </li>
-                                <li>
-                                    <input type="radio" value="Space-grey">
-                                    <label class="mini-details">Space Grey</label>
-                                </li>
-                            </ul>
+                            <div class="radio-group">
+                                <label class="radio">
+                                    <input type="radio" value="Karma-orange" name="color" >
+                                    <div class="radio__radio"></div>
+                                    Karma Orange
+                                    
+                                </label> 
+                                <label class="radio">
+                                    <input type="radio" value="Space-grey" name="color">
+                                    <div class="radio__radio"></div>
+                                    Space Grey
+                                    
+                                </label>
+                            </div>
+                        <div class="check-box">
+                            <label class="details">
+                                <p class="conditions"><input type="checkbox">By placing your order you agree to <span class="orange-codition"><u>Karma's Terms and Conditions*</u></span></p>
+                            </label>
                         </div>
-                        <div class="button">
-                            <p class="conditions"><input type="checkbox">By placing your order you agree to <span class="orange-codition"><u>Karma's Terms and Conditions*</u></span></p>
-                            <input type="submit" value="Place my order">
-                        </div>
+                            <input type="submit" value="Place my order" class="button" >
                     </form>
             </div>
         </main>
