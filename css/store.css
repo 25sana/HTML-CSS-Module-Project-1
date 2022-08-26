@@ -35,6 +35,7 @@ form{
 .store-form .input-box{
     margin-bottom:30px ; 
     width: 100%; 
+    font-weight: 500;
 }
 .store-form .input-group{
     display: flex;
@@ -47,12 +48,14 @@ form{
     border-radius: 5px;
     width: 90%;
     height: 35px;
+    
 }
 .store-form .input-box select{
     border: 2px solid #686868;
     border-radius: 5px;
     width: 95%;
     height: 40px;
+    color: #686868;
 }
 .store-form .check-box input{
     border: 2px solid #686868;
