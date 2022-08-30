@@ -11,11 +11,14 @@
         <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico">
     </head>
     <body>
-            <header>
+           
+        <main>
+            <div class="header">
                 <div class="logo">
-                    <img src="./img/karma-logo.svg" alt="logo" width="30px" height="30px">
+                    <img src="../img/karma-logo.svg" alt="logo" >
                 </div>
                 <div class="container">
+                    <div class="nav-list" id="nav-bar" ></div> 
                     <ul>
                         <li><a href="index.html" class="current">Meet Karma</a></li>
                         <li><a href="#">How it works</a></li>
@@ -23,31 +26,33 @@
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Help</a></li>
                         <li><a href="#" class="login_button">login</a></li>
-
+        
                     </ul>
+                    <div class="menu-hamburger" id="hamburger-button">
+                        <img src="../level-3/menu-hamburger.svg" alt="" height="35px" width="35px" >
+                    </div>
                 </div>
-            </header>
-        <main>
+            </div>
                 <img class="right-image" src="./level-2/store-image_by-andrew-neel-unsplash.jpg" alt="" >
                 <div class="store-form">
                     <h1>Order your Karma wifi divice today!</h1> 
                     <form action="#">
                         <div class="input-group">
                             <div class="input-box">
-                                <label class="details">First Name*</label>
+                                <label >First Name*</label>
                                 <input type="text" placeholder="" required>
                             </div>
                             <div class="input-box">
-                                <label class="details">Last Name*</label>
+                                <label >Last Name*</label>
                                 <input type="text" placeholder="" required>
                             </div>
                         </div>
                         <div class="input-box">
-                            <label class="details">Adress*</label>
+                            <label >Adress*</label>
                             <input type="email" placeholder="" required>
                         </div>
                         <div class="input-box">
-                            <label class="details">Adress2*</label>
+                            <label>Adress2*</label>
                             <input type="email" placeholder="" required>
                         </div>
                         <div class="input-group">
@@ -63,10 +68,12 @@
                             </div>
                             <div class="input-box">
                                 <label class="details">Post code*</label>
-                                <input type="text" placeholder="" required>
+                                <div class="postCode">
+                                    <input type="text" placeholder=""  required>
+                                </div>
                             </div>
                         </div>
-                            <label class="details">Select Color</label>
+                            <label >Select Color</label>
                             <div class="radio-group">
                                 <label class="radio">
                                     <input type="radio" value="Karma-orange" name="color" >
@@ -82,7 +89,7 @@
                                 </label>
                             </div>
                         <div class="check-box">
-                            <label class="check">
+                            <label >
                                 <input type="checkbox" > 
                                 <div class="checkmark"></div>
                                 <p class="conditions">By placing your order you agree to <span class="orange-codition"><u>Karma's Terms and Conditions</u></span>  *</p>
