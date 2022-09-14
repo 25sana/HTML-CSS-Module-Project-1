@@ -7,6 +7,10 @@ body {
 main{
     width: 100%;
 }
+.header .logo{ 
+    width: 50px; 
+} 
+
 img{
     width: 50%;
     float: right;
@@ -16,25 +20,24 @@ form{
 }
 .store-form{
     margin-top: 80px;
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: justify;
-    margin-left: 5%;
-    margin-right: 5%;
+    text-align: flex-start;
 }
 .store-form h1{
+    text-align: center;
     margin-top: 60px;
     font-size: 45px;
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-weight: 400;
     color: #cc5500;
 }
 .store-form .input-box{
     margin-bottom:30px ; 
     width: 100%; 
+    font-weight: 500;
 }
 .store-form .input-group{
     display: flex;
@@ -46,13 +49,15 @@ form{
     border: 2px solid #686868;
     border-radius: 5px;
     width: 90%;
-    height: 35px;
+    height: 45px;
+    
 }
 .store-form .input-box select{
     border: 2px solid #686868;
     border-radius: 5px;
     width: 95%;
-    height: 40px;
+    height: 50px;
+    color: #686868;
 }
 .store-form .check-box input{
     border: 2px solid #686868;
@@ -69,7 +74,7 @@ label {
     width: 40%;
 	background: hwb(25 7% 3% / 0.943);
 	padding: 15px 35px;
-    margin: 30px;
+    margin-top: 30px; 
 	border: 0;
 	border-radius: 3px;
 	letter-spacing: 1px;
@@ -114,13 +119,6 @@ label {
 .radio input:checked + .radio__radio::after{
     transform: scale(1);
 }
-/*.check-box{
-    display: flex;
-    justify-content: center ;
-    align-items: baseline; 
-    text-align:justify; 
-    cursor: pointer;
-} */
 .check-box p{
     color: #535353;
 }
@@ -148,10 +146,56 @@ label {
 
 }
 .checkmark::after{  
-     content: url(../level-2/checkmark.svg); 
+    content: url(../level-2/checkmark.svg); 
     display: none; 
 }
 .check-box input:checked + .checkmark::after {  
     display: block; 
 }
 
+@media screen and (max-width:768px){
+   .right-image{
+    margin-top: 1250px;
+    width:100%
+   }
+   .store-form{
+    position: absolute; 
+    width: 100%; 
+   }
+   .store-form h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   }
+   .input-group{
+    flex-direction: column;
+    width: 100%;
+   }
+   .radio-group{
+    flex-direction: column ;
+    align-items: flex-start;
+   }
+   .radio{
+    margin-bottom: 0;
+   }
+   .postCode{
+    width: 40%;
+   }
+   .store-form{
+    width: 80%;
+   }
+   .check-box p{
+    margin-left: 15px;
+   }
+   .check-box{
+    margin-top: 40px;
+   }
+
+   .store-form .button{
+    width: auto;
+	padding: 25px 50px;
+    margin-left: 30%;
+} 
+    
+}
